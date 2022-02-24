@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MV Kydex®</title>
+    <link rel="icon" href="../assets/img/favicon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/pages.css">
+</head>
+<body>
+    <header>
+        <section class="logo">
+            <div class="barra-menu">
+                <a href="#">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </div>
+            <div class="logo__img">
+                <a href="../index.html"><img src="../assets/img/logo.png" alt="logo-mv"></a>
+            </div>
+            <div class="logo__txt">
+                <h1>MV KYDEX®</h1>
+                <span>ARGENTINA</span>
+            </div>
+        </section>
+        <section>
+            <nav>
+                <ul  class="menu" type="none">
+                    <li><a class="menu__link" href="./productos.html">PRODUCTOS</a></li>
+                    <li><a class="menu__link" href="./preguntas.html">PREGUNTAS FRECUENTES</a></li>
+                    <li><a class="menu__link" href="./nosotros.html">NOSOTROS</a></li>
+                    <li><a class="menu__link" href="./contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>        
+        </section>
+        <section class="buscar-carrito">
+            <div class="buscar">
+                <input type="text" placeholder="Buscar" required>
+                <div class="btn">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+            <a class="carrito" href="#"><i class="fas fa-shopping-cart"></i></a></li>
+        </section>    
+        <section>
+        </section>
+    </header>
+    <main class="contacto">
+        <h2>CONTACTO</h2>
+        <form action="" method="post">
+            <fieldset class="form">
+                <legend>DATOS PERSONALES</legend>
+                <section>
+                    <input class="nombre" type="text" name="nombre" id="nombre" placeholder="Nombre" required/>
+                    <input class="apellido" type="text" name="apellido" id="apellido" placeholder="Apellido" required/>
+                </section>
+                <section class="container-edadEmail">
+                    <label class="label-edad" for="edad">SOY MAYOR DE EDAD</label>
+                    <select class="edad" name="edad" id="edad" required>
+                        <option value="1">SI</option>
+                        <option value="0">NO</option>
+                    </select>
+                    <input class="email" type="email" name="email" id="email" placeholder="Email" required/>
+                </section>
+                <section class="container-profesion">
+                    <label class="profesion" for="profesion">PROFESIÓN</label>
+                    <div class="container-opciones">
+                        <div class="militar">
+                            <input type="checkbox" name="profesion" id="militar" /><label for="militar">Militar</label>
+                        </div>
+                        <div class="ffss">
+                            <input type="checkbox" name="profesion" id="ffss" /><label for="ffss">Fuerzas de Seguridad</label>
+                        </div>
+                        <div class="tiro">
+                            <input type="checkbox" name="profesion" id="tiro" /><label for="tiro">Tiro Práctico</label>
+                        </div>
+                        <div class="otro">
+                            <input type="text" name="profesion" id="otro" placeholder="Otro..." />
+                        </div>
+                    </div>
+                </section>
+                <section class="ofertas">
+                    <input class="acepto" type="radio" name="ofertas" id="ofertas" />
+                    <label class="acepto" for="ofertas">ACEPTO RECIBIR NOTIFICACIONES Y <span>OFERTAS</span></label>
+                </section>
+                <textarea class="consulta" name="consulta" id="consulta" cols="30" rows="10" placeholder="DEJANOS TU MENSAJE AQUÍ..."></textarea>  
+            </fieldset><br>
+            
+            <section class="botones">
+                <input class="reset" type="reset" name="reset" value="Limpiar formulario"/>
+                <input class="submit" type="submit" name="enviar" value="Enviar" />
+            </section>
+        </form>
+        <a class="volver" href="../index.html"><< Inicio</a>
+    </main>
+    <footer>
+        <section class="footer">
+            <div class="footer__logo">
+                <a href="../index.html"><img src="../assets/img/logo.png" alt="logo"></a>
+            </div>
+            <div class="footer__redes">
+                <ul class="redes" type="none">
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>   
+            <div class="footer__menu">
+                <nav>
+                    <ul  class="menu-footer" type="none">
+                        <li><a href="./preguntas.html">Preguntas Frecuentes</a></li>
+                        <li><a href="./nosotros.html">Nosotros</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>        
+            </div>
+            <div class="footer__suscribite">
+                <label id="suscribite">Recibí todas las OFERTAS!</label>
+                <input class="input" type="email" name="suscribite" placeholder="example@email..." required />
+                <input class="boton" type="submit" value="Suscribirme" />    
+            </div>
+        </section>    
+        <section class="copyright">
+            <span>
+                2022 MV Kydex®. Todos los derechos reservados.
+            </span>
+        </section>
+    </footer>
+</body>
+</html>
