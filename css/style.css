@@ -71,6 +71,30 @@ header.abajo {
   text-decoration: none;
   cursor: pointer;
 }
+.menu li {
+  position: relative;
+  display: inline-block;
+}
+.menu li::before {
+  content: "";
+  height: 1px;
+  width: 0%;
+  background-color: var(--color-primario-1);
+  position: absolute;
+  left: 10%;
+  bottom: -8px;
+  transition: 0.4s ease-out;
+}
+a:hover {
+  color: var(--color-primario-1);
+  transition: 0.3s;
+}
+.menu__link:hover {
+  color: var(--color-text);
+}
+.menu li:hover::before {
+  width: 80%;
+}
 .buscar-carrito {
   display: flex;
   flex-direction: row;
@@ -327,10 +351,6 @@ header.abajo {
   background-color: rgba(54, 54, 54, 0.589);
   color: whitesmoke;
   padding: 10px;
-}
-a:hover {
-  color: var(--color-primario-1);
-  transition: 0.3s;
 }
 i:hover {
   color: var(--color-primario-1);
