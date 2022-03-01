@@ -67,13 +67,31 @@ a > .btn:hover {
 .redes span:hover {
   color: #00a2e8c4;
 }
+.redes span:active {
+  color: goldenrod;
+}
 #container-logofooter {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
+#slide {
+  transition: all 0.3s;
+}
+#slide:hover {
+  transform: scale(0.9);
+}
+@media (max-width: 700px){
+  #container-nav-footer{
+      display: flex;
+      flex-direction: column !important;
+      font-size: 20px;
+      align-items: center;
+      border-top: solid 1px whitesmoke;
+      border-bottom: solid 1px whitesmoke;
+      margin-top: 15px;
+  }
 /*header {
   display: flex;
   flex-flow: row nowrap;
