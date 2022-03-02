@@ -1,93 +1,108 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MV Kydex®</title>
-    <link rel="icon" href="../assets/img/favicon.png">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="icon" href="./assets/img/favicon.png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/pages.css">
-</head>
-<body>
-    <header>
-        <section class="logo">
-            <div class="barra-menu">
-                <a href="#">
-                    <i class="fas fa-bars"></i>
-                </a>
-            </div>
-            <div class="logo__img">
-                <a href="../index.html"><img src="../assets/img/logo.png" alt="logo-mv"></a>
-            </div>
-            <div class="logo__txt">
-                <h1>MV KYDEX®</h1>
-                <span>ARGENTINA</span>
-            </div>
-        </section>
-        <section>
-            <nav>
-                <ul  class="menu" type="none">
-                    <li><a class="menu__link" href="./productos.html">PRODUCTOS</a></li>
-                    <li><a class="menu__link" href="./preguntas.html">PREGUNTAS FRECUENTES</a></li>
-                    <li><a class="menu__link" href="./nosotros.html">NOSOTROS</a></li>
-                    <li><a class="menu__link" href="./contacto.html">CONTACTO</a></li>
-                </ul>
-            </nav>        
-        </section>
-        <section class="buscar-carrito">
-            <div class="buscar">
-                <input type="text" placeholder="Buscar" required>
-                <div class="btn">
-                    <i class="fas fa-search"></i>
-                </div>
-            </div>
-            <a class="carrito" href="#"><i class="fas fa-shopping-cart"></i></a></li>
-        </section>    
-        <section>
-        </section>
-    </header>
-    <main class="container-nosotros">
-        <a  class="volver" href="../index.html"><< Inicio</a><br>
-        <section class="nosotros">
-            <h2>NOSOTROS</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse cumque nulla at, neque magni vitae totam commodi rem quibusdam. Impedit, ipsum illum? Nemo, incidunt alias adipisci repellat labore nostrum provident.
-            Voluptates corrupti, libero quia ducimus explicabo vitae incidunt aliquam animi? Asperiores expedita veritatis est ullam, quasi doloribus voluptatem aperiam consequuntur voluptates molestiae dolorum rerum quibusdam ab, quod molestias repellat officiis?
-            Reprehenderit, sint nihil cum veniam aliquid animi ipsum laborum possimus? Ab delectus adipisci libero incidunt sint nam ipsam voluptatibus eaque nostrum, nemo harum! Suscipit voluptas culpa quibusdam fugit earum magni!</p>
-        </section>
-    </main>
-    <footer>
-        <section class="footer">
-            <div class="footer__logo">
-                <a href="../index.html"><img src="../assets/img/logo.png" alt="logo"></a>
-            </div>
-            <div class="footer__redes">
-                <ul class="redes" type="none">
-                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
-                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                </ul>
-            </div>   
-            <div class="footer__menu">
-                <nav>
-                    <ul  class="menu-footer" type="none">
-                        <li><a href="./preguntas.html">Preguntas Frecuentes</a></li>
-                        <li><a href="./nosotros.html">Nosotros</a></li>
-                        <li><a href="./contacto.html">Contacto</a></li>
-                    </ul>
-                </nav>        
-            </div>
-            <div class="footer__suscribite">
-                <label id="suscribite">Recibí todas las OFERTAS!</label>
-                <input class="input" type="email" name="suscribite" placeholder="example@email..." required />
-                <input class="boton" type="submit" value="Suscribirme" />    
-            </div>
-        </section>    
-        <section class="copyright">
-            <span>
-                2022 MV Kydex®. Todos los derechos reservados.
-            </span>
-        </section>
-    </footer>
-</body>
+    <link rel="stylesheet" href="../css/style.css">   
+    <title>MV Kydex®</title>
+  </head>
+  <body>
+        <header class="container-fluid m-0 p-0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3 fs-5" id="header">
+                <section class="container-fluid">
+                    <div class="container bg-transparent" id="container-logo-nav">
+                        <a href="../index.html">
+                            <img src="./assets/img/logo.png" alt="logo" class="img-fluid" id="logo">
+                        </a>   
+                    </div>   
+                    <a class="navbar-brand" href="../index.html">
+                        <h1 class="fs-4 d-inline my-0 mx-2">MV Kydex®<span class="fw-light"> Argentina</span></h1>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Productos</a>
+                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="./productos.html">Pistoleras</a></li>
+                                    <li><a class="dropdown-item" href="./productos.html">Porta cargadores</a></li>
+                                    <li><a class="dropdown-item" href="./productos.html">Accesorios</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Equipo</a>
+                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="./nosotros.html">Nosotros</a></li>
+                                    <li><a class="dropdown-item" href="./preguntas.html">Preguntas frecuentes</a></li>
+                                    <li><a class="dropdown-item" href="./contacto.html">Contacto</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2  bg-dark text-light" type="email" placeholder="Correo Electrónico" aria-label="Search">
+                            <button class="btn btn-dark btn-dark-outline-success border-light me-2" type="submit">Suscribete</button>
+                        </form>
+                    </div>
+                </section>
+            </nav>
+        </header>
+        <main class="container-fluid m-0 p-5 w-75 mx-auto">
+            <section class="nosotros text-light">
+                <h2>NOSOTROS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse cumque nulla at, neque magni vitae totam commodi rem quibusdam. Impedit, ipsum illum? Nemo, incidunt alias adipisci repellat labore nostrum provident.
+                Voluptates corrupti, libero quia ducimus explicabo vitae incidunt aliquam animi? Asperiores expedita veritatis est ullam, quasi doloribus voluptatem aperiam consequuntur voluptates molestiae dolorum rerum quibusdam ab, quod molestias repellat officiis?
+                Reprehenderit, sint nihil cum veniam aliquid animi ipsum laborum possimus? Ab delectus adipisci libero incidunt sint nam ipsam voluptatibus eaque nostrum, nemo harum! Suscipit voluptas culpa quibusdam fugit earum magni!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse cumque nulla at, neque magni vitae totam commodi rem quibusdam. Impedit, ipsum illum? Nemo, incidunt alias adipisci repellat labore nostrum provident.
+                Voluptates corrupti, libero quia ducimus explicabo vitae incidunt aliquam animi? Asperiores expedita veritatis est ullam, quasi doloribus voluptatem aperiam consequuntur voluptates molestiae dolorum rerum quibusdam ab, quod molestias repellat officiis?
+                Reprehenderit, sint nihil cum veniam aliquid animi ipsum laborum possimus? Ab delectus adipisci libero incidunt sint nam ipsam voluptatibus eaque nostrum, nemo harum! Suscipit voluptas culpa quibusdam fugit earum magni!</p>
+                            
+            </section>
+        </main>
+        <footer class="bg-dark text-ligth d-flex flex-column p-0 m-0 pt-4" id="footer">
+            <section class="container-fluid m-0 p-0" id="footer-ppal">
+                <section class="container d-flex flex-row w-50">
+                    <div class="col w-100" id="container-logofooter">
+                        <a href="../index.html" class="col-3 d-flex align-items-center justify-content-center w-100">
+                            <img src="../assets/img/logo-footer.png" alt="logo-footer" class="img-logo-footer w-100" id="logo-footer">
+                        </a>
+                        <h3 class="text-light fs-6 d-inline w-25 m-0" id="h3">MV KYDEX® Argentina</h3>
+                    </div>
+                </section>
+                <section class="container">
+                        <nav class="container-fluid">
+                            <div class="container-fluid d-flex flex-row flex-wrap
+                            justify-content-center" id="nav-footer">
+                                <ul id="container-nav-footer" class="d-flex flex-row justify-content-center p-3 align-middle">
+                                    <li><a class="redes text-decoration-none align-middle" href="./nosotros.html"><span >Nosotros</span></i></a></li>
+                                    <li><a class="redes text-decoration-none align-middle" href="./preguntas.html"><span>Preguntas frecuentes</span></i></a></li>
+                                    <li><a class="redes text-decoration-none align-middle" href="./contacto.html"><span>Contacto</span></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="container-fluid d-flex flex-row flex-wrap justify-content-center">
+                                <ul class="d-flex flex-row justify-content-center p-3 align-middle">
+                                    <li><a class="redes" href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a class="redes" href="#"><i class="fab fa-whatsapp"></i></a></li>
+                                    <li><a class="redes" href="#"><i class="fab fa-youtube"></i></a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                </section>
+            </section>
+            <section class="container-fluid m-0 p-0 bg-black">
+                <p class="text-center text-light mt-1">2022 MV Kydex®. Todos los derechos reservados.</p>
+            </section>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="./js/script.js"></script>
+    </body>
 </html>
