@@ -29,6 +29,12 @@ a > .btn:hover {
 #logo {
   width: 100% !important;
 }
+.nav-index {
+  z-index: 2;
+  width: 100% !important;
+  margin-top: 0 !important;
+  background-color: rgb(0, 0, 0) !important;
+}
 #footer {
   padding: 15px;
 }
@@ -127,6 +133,9 @@ ul {
     flex-direction: row;
     flex-wrap: nowrap;
     padding-left: 10% !important;
+  }
+  .nav-index {
+    position: fixed !important;
   }
 }
 @media (max-width: 769px) {
