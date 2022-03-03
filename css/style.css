@@ -128,4 +128,8 @@ a > .btn:hover {
   #card:hover {
     transform: scale(0.9);
   }
+  #preguntas {
+    width: 100% !important;
+    margin: 0;
+  }
 }
