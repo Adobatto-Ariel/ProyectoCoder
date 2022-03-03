@@ -45,6 +45,11 @@ a > .btn:hover {
   display: block;
   text-align: center;
   font-size: 30px !important;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+#h3:hover {
+  color: goldenrod !important;
 }
 .redes i {
   color: rgb(226, 222, 222);
@@ -99,6 +104,11 @@ a > .btn:hover {
 }
 ul {
   list-style: none !important;
+}
+.form-control,
+.form-select {
+  background-color: rgba(255, 255, 255, 0.171) !important;
+  color: #fff !important;
 }
 @media (max-width: 960px) {
   #container-nav-footer {
