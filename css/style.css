@@ -97,6 +97,9 @@ a > .btn:hover {
 #card:hover {
   transform: scale(1.05);
 }
+ul {
+  list-style: none !important;
+}
 @media (max-width: 960px) {
   #container-nav-footer {
     display: flex;
