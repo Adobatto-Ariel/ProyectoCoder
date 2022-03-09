@@ -1,0 +1,25 @@
+#productos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 25px;
+  #card {
+    transition: all 0.3s;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+@media (max-width: 769px) {
+  #productos {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 480px) {
+  #productos {
+    grid-template-columns: 1fr;
+    #card:hover {
+      transform: scale(0.9);
+    }
+  }
+}

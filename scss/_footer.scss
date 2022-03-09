@@ -1,0 +1,88 @@
+#footer {
+  padding: 15px;
+
+  #container-logofooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      padding: 0 30px;
+
+      #logo-footer {
+        margin-bottom: 10px;
+        width: 250px !important;
+        height: 110px;
+      }
+    }
+
+    #h3 {
+      width: 100% !important;
+      display: block;
+      text-align: center;
+      font-size: 30px !important;
+      transition: all 0.3s;
+      cursor: pointer;
+
+      &:hover {
+        color: rgb(218, 165, 32) !important;
+      }
+    }
+  }
+
+  .redes {
+    i {
+      color: $color-secundary;
+      font-size: 35px;
+      padding: 10px;
+      margin-right: 10px;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $color-primary;
+      }
+
+      &:active {
+        color: goldenrod;
+      }
+    }
+
+    span {
+      color: $color-secundary;
+      font-size: 20px;
+      padding: 0px;
+      margin: 0 25px 0 0;
+      text-decoration: none;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $color-primary;
+      }
+
+      &:active {
+        color: goldenrod;
+      }
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  #container-nav-footer {
+    display: flex;
+    flex-direction: column !important;
+    font-size: 20px;
+    align-items: center;
+    border-top: solid 1px whitesmoke;
+    border-bottom: solid 1px whitesmoke;
+    margin-top: 15px;
+  }
+}
+@media (min-width: 769px) {
+  #footer-ppal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-left: 10% !important;
+  }
+}
