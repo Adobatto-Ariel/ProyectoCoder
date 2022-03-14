@@ -4,7 +4,7 @@
   grid-template-rows: auto;
   gap: 25px;
   #card {
-    transition: all 0.3s;
+    @extend .transitionTemp;
     &:hover {
       transform: scale(1.05);
     }

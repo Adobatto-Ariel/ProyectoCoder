@@ -16,6 +16,43 @@ body {
     list-style: none !important;
   }
 }
+
+/* @extend */
+.transitionTemp {
+  transition: all 0.3s;
+}
+
+/* @mixin */
+@mixin icons($fs, $p, $redes) {
+  color: $color-secundary;
+  @extend .transitionTemp;
+  font-size: $fs;
+  padding: $p;
+  @if ($redes == "no") {
+    &:hover {
+      color: $color-primary;
+    }
+    &:active {
+      color: goldenrod;
+    }
+  }
+}
+
+/* maps */
+$rrss: (
+  whatsapp: #25d366,
+  youtube: #ff0000,
+  instagram: #833ab4
+);
+
+@each $rs, $color in $rrss {
+  .fa-#{$rs} {
+    &:hover {
+      color: $color !important;
+    }
+  }
+}
+
 @media (max-width: 480px) {
   #productos {
     grid-template-columns: 1fr;
@@ -26,6 +63,7 @@ body {
   #preguntas {
     width: 100% !important;
     margin: 0;
+    padding: 48px 20px !important;
   }
   #nosotros {
     width: 100% !important;
@@ -34,5 +72,19 @@ body {
   #contacto {
     width: 100% !important;
     margin: 0;
+  }
+}
+@media (max-width: 390px) {
+  #text-mv {
+    margin: 0;
+    h1 {
+      margin-left: 0 !important;
+    }
+  }
+  #arg {
+    display: none;
+  }
+  #burguer {
+    padding: 0;
   }
 }

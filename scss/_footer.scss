@@ -22,7 +22,7 @@
       display: block;
       text-align: center;
       font-size: 30px !important;
-      transition: all 0.3s;
+      @extend .transitionTemp;
       cursor: pointer;
 
       &:hover {
@@ -33,36 +33,14 @@
 
   .redes {
     i {
-      color: $color-secundary;
-      font-size: 35px;
-      padding: 10px;
+      @include icons(35px, 10px, "");
       margin-right: 10px;
-      transition: all 0.3s;
-
-      &:hover {
-        color: $color-primary;
-      }
-
-      &:active {
-        color: goldenrod;
-      }
     }
 
     span {
-      color: $color-secundary;
-      font-size: 20px;
-      padding: 0px;
+      @include icons(20px, 0px, "no");
       margin: 0 25px 0 0;
       text-decoration: none;
-      transition: all 0.3s;
-
-      &:hover {
-        color: $color-primary;
-      }
-
-      &:active {
-        color: goldenrod;
-      }
     }
   }
 }

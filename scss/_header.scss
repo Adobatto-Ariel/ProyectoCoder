@@ -10,24 +10,9 @@
 }
 
 .btn {
-  transition: all 0.3s;
+  @extend .transitionTemp;
 
   &:hover {
     background-color: $color-primary !important;
-  }
-}
-
-@media (max-width: 390px) {
-  #text-mv {
-    margin: 0;
-    h1 {
-      margin-left: 0 !important;
-    }
-  }
-  #arg {
-    display: none;
-  }
-  #burguer {
-    padding: 0;
   }
 }
