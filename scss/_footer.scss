@@ -1,66 +1,167 @@
 #footer {
-  padding: 15px;
-
-  #container-logofooter {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    a {
-      padding: 0 30px;
-
-      #logo-footer {
-        margin-bottom: 10px;
-        width: 250px !important;
-        height: 110px;
-      }
-    }
-
-    #h3 {
-      width: 100% !important;
-      display: block;
-      text-align: center;
-      font-size: 30px !important;
-      @extend .transitionTemp;
-      cursor: pointer;
-
-      &:hover {
-        color: rgb(218, 165, 32) !important;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto;
+  background-color: rgba(0, 0, 0, 0.425);
+  margin: 0 auto;
+  padding: 35px 25px 10px;
+  border-top: 1px solid $color-secundary;
+  border-radius: 30px 30px 0 0;
+  #bloque1 {
+    .footerLOGO {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .containerLOGO {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        .img-logo {
+          max-width: 219px !important;
+          max-height: 118px !important;
+        }
+        .mv {
+          font-size: 25px;
+          @include icons(25px, 0px, "no");
+        }
       }
     }
   }
-
-  .redes {
-    i {
-      @include icons(35px, 10px, "");
-      margin-right: 10px;
+  #containerMAP {
+    padding: 10px;
+    margin: 0;
+  }
+  strong {
+    color: $color-secundary;
+    font-size: 25px;
+    margin-left: 10px;
+  }
+  ul {
+    list-style: none;
+    padding: 3px;
+    .item {
+      a {
+        text-decoration: none;
+        color: $color-secundary;
+        font-size: 18px;
+        em {
+          @include icons(18px, 10px, "no");
+          font-style: normal;
+        }
+      }
     }
-
-    span {
-      @include icons(20px, 0px, "no");
-      margin: 0 25px 0 0;
-      text-decoration: none;
+  }
+}
+#derechosREDES {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  .rrss {
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    justify-content: center;
+    padding: 0;
+    i {
+      @include icons(30px, 15px, "");
     }
   }
 }
 
 @media (max-width: 960px) {
-  #container-nav-footer {
-    display: flex;
-    flex-direction: column !important;
-    font-size: 20px;
-    align-items: center;
-    border-top: solid 1px whitesmoke;
-    border-bottom: solid 1px whitesmoke;
-    margin-top: 15px;
+  #footer {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "logo logo logo"
+      "acerca prod cont";
+    .mapLOGO {
+      grid-area: logo;
+    }
+    .mapACERCA {
+      grid-area: acerca;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    .mapPROD {
+      grid-area: prod;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    .mapCONT {
+      grid-area: cont;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
   }
 }
-@media (min-width: 769px) {
-  #footer-ppal {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    padding-left: 10% !important;
+@media (max-width: 700px) {
+  #footer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "logo cont"
+      "acerca prod";
+    text-align: start;
+    .mapACERCA,
+    .mapCONT,
+    .mapPROD {
+      padding-left: 60px !important;
+    }
+    .footerACERCA,
+    .footerCONTACT,
+    .footerPROD {
+      width: 100%;
+      li {
+        border-left: 1px solid $color-primary;
+      }
+    }
+    .acerca,
+    .prod,
+    .cont {
+      margin-left: 0 !important;
+    }
+  }
+}
+@media (max-width: 700px) {
+  #derechosREDES {
+    padding: 10px;
+    .rrss {
+      width: 50%;
+      justify-content: space-around;
+      i {
+        padding: 0;
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  #footer {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "logo"
+      "prod"
+      "acerca"
+      "cont";
+    text-align: start;
+    .map {
+      padding: 10px !important;
+    }
+    .footerMAP {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-left: 20%;
+    }
   }
 }
